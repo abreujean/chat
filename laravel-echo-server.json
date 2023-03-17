@@ -1,0 +1,39 @@
+{
+	"authHost": "http://chat.test",
+	"authEndpoint": "/broadcasting/auth",
+	"clients": [
+		{
+			"appId": "883e8bcde263e8ee",
+			"key": "20bfe596b796ff0fd8a889f15fa6d9ae"
+		}
+	],
+	"database": "redis",
+	"databaseConfig": {
+		"redis": {
+			"password":"secret_redis"
+		},
+		"sqlite": {
+			"databasePath": "/database/laravel-echo-server.sqlite"
+		}
+	},
+	"devMode": false,
+	"host": null,
+	"port": "6001",
+	"protocol": "http",
+	"socketio": {},
+	"secureOptions": 67108864,
+	"sslCertPath": "",
+	"sslKeyPath": "",
+	"sslCertChainPath": "",
+	"sslPassphrase": "",
+	"subscribers": {
+		"http": true,
+		"redis": true
+	},
+	"apiOriginAllow": {
+		"allowCors": true,
+		"allowOrigin": "http://chat.test",
+		"allowMethods": "GET, POST",
+		"allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN, X-Socket-Id"
+	}
+}
